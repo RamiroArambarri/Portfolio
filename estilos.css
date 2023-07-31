@@ -1,0 +1,125 @@
+body {
+	background: black;
+	margin: 0;
+	font-family: calibri;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: Bahnschrift;
+}
+
+img {
+	display:block;
+}
+
+#contenedor {
+	width: 60%;
+	margin: 0 auto;
+	background: DarkSlateGray;
+	color: white;
+	padding: 1em;
+}
+
+#sobre-mi {
+	max-width: 100%;
+	display: flex;
+	margin: 0 auto;
+}
+
+#sobre-mi img{
+	width: 30%;
+	margin: 2em;
+	height: 30%;
+}
+
+#sobre-mi div{
+	width: 70%;
+}
+
+
+#galeria {
+	display: flex;
+	flex-wrap: wrap;
+	transition: .15s;
+}
+
+#galeria:hover a{
+	z-index: 1;
+	opacity: 0.5;
+}
+
+#galeria a {
+	width: 20%;
+	transition: .15s ease;
+}
+
+#galeria a:hover{
+	position: relative;
+	scale: 1.2;
+	opacity: 1.5;
+	z-index: 2;
+}
+
+a img {
+	width: 100%;
+}
+
+#galeria-detallada {
+	background: white;
+}
+
+
+#galeria-detallada img {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: 0 auto;
+}
+
+.separador {
+	height: 1em;
+	background: white;
+	margin: 0;
+}
+
+ul{
+	display:flex;
+	margin:0;
+	padding: 0;
+	justify-content: space-between;
+}
+
+nav li{
+	list-style: none;
+	display: block;
+	width: calc(50% - 0.5em);
+}
+
+nav li a {
+	background: lightslategray;
+	width: 100%;
+	max-width: 100%;
+	display: inline-block;
+	padding: 0.5em 0 0.5em 0;
+	text-align: center;
+	vertical-align: baseline;
+	color: white;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+nav li a:hover{
+	background: white;
+	color: darkslategray;
+}
+
+iframe {
+	margin: 0 auto;
+	width: 100%;
+	height: 900px;
+}
+
+a{
+	color:white;
+}
+
