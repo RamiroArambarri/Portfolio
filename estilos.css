@@ -5,6 +5,8 @@ body {
 	box-sizing: border-box;
 }
 
+
+
 h1 {
 	font-family: Bahnschrift;
 }
@@ -35,6 +37,7 @@ img {
 
 #sobre-mi div{
 	width: 70%;
+	text-align: justify;
 }
 
 
@@ -45,7 +48,6 @@ img {
 }
 
 #galeria:hover a{
-	z-index: 1;
 	opacity: 0.5;
 }
 
@@ -55,7 +57,6 @@ img {
 }
 
 #galeria a:hover{
-	position: relative;
 	scale: 1.2;
 	opacity: 1.5;
 	z-index: 2;
@@ -66,7 +67,7 @@ a img {
 }
 
 #galeria-detallada {
-	background: white;
+	background: black;
 }
 
 
@@ -78,7 +79,7 @@ a img {
 
 .separador {
 	height: 1em;
-	background: white;
+	background: black;
 	margin: 0;
 }
 
@@ -123,3 +124,49 @@ a{
 	color:white;
 }
 
+
+
+@media only screen
+and (orientation: portrait)
+{
+	
+	#contenedor {
+		width: 100%;
+		padding: 0;
+	}
+
+	nav{
+		padding: 1em;
+	}
+
+	#sobre-mi {
+		display: block;
+	}
+
+	#sobre-mi div {
+		width: 100%;
+		max-width: calc(100% - 2em);
+		padding: 1em;
+		text-align: justify;
+	}
+
+	#sobre-mi img {
+		max-width: 100%;
+	}
+
+	#galeria:hover a{
+	opacity: 1;
+	}
+
+	#galeria a:hover{
+	scale: 1;
+	}
+
+	#contactame {
+	margin: 1em;
+	}
+
+	iframe{
+		height: 1100px;
+	}
+}
