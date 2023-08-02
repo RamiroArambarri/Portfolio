@@ -160,6 +160,8 @@ and (orientation: portrait)
 
 	#sobre-mi img {
 		max-width: 100%;
+		width: 100%
+		height:auto;
 	}
 
 	#galeria:hover a{
