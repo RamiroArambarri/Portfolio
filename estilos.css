@@ -74,19 +74,21 @@ a img {
 	margin: 0 auto;
 }
 
-#sirena, #howl, #dama-y-dragon, #paladin, #guardian, #richard, #princesa, #warrior-souls, #anubis {
+#sirena, #howl, #dama-y-dragon, #guardian, #richard, #princesa, #warrior-souls, #anubis {
 	max-width: 100%;
 	max-height: 100vh;
 }
 
 #cthulhu{
-	max-height: calc(237500vh / 1350);
-	height: calc(237500vh / 1350);
+	max-width: 100%;
+	max-height: calc(142320vw / 1080);
+	height: calc(237200vh / 1350);
 }
 
 #paladin{
-	max-height: 130vh;
+	max-height: 60vw;
 	height: 130vh;
+	max-width: 100%;
 }
 
 ul{
