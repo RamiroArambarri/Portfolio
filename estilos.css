@@ -160,8 +160,6 @@ and (orientation: portrait)
 
 	#sobre-mi img {
 		max-width: 100%;
-		width: 100%
-		height:auto;
 	}
 
 	#galeria:hover a{
@@ -170,6 +168,12 @@ and (orientation: portrait)
 
 	#galeria a:hover{
 	scale: 1;
+	}
+
+	galeria-detallada img{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
 	}
 
 	#contactame {
