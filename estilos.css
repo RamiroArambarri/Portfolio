@@ -70,17 +70,23 @@ a img {
 	background: black;
 }
 
-
-#galeria-detallada img {
-	max-width: 100%;
-	max-height: 100vh;
+#galeria-detallada img{
 	margin: 0 auto;
 }
 
-.separador {
-	height: 1em;
-	background: black;
-	margin: 0;
+#sirena, #howl, #dama-y-dragon, #paladin, #guardian, #richard, #princesa, #warrior-souls, #anubis {
+	max-width: 100%;
+	max-height: 100vh;
+}
+
+#cthulhu{
+	max-height: calc(237500vh / 1350);
+	height: calc(237500vh / 1350);
+}
+
+#paladin{
+	max-height: 130vh;
+	height: 130vh;
 }
 
 ul{
