@@ -19,7 +19,24 @@
 				Contáctame
 				</h1>
 				<p>Contáctame enviando un mail a <a href="mailto:raarambarri@gmail.com">raarambarri@gmail.com</a> o completando el siguiente formulario:</p>
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqORo6ywKpuh-6YIgjAjC-oWBCsWtcEtZTWqpxo-S4DdikyQ/viewform">
+				<form action="https://formsubmit.co/raarambarri@gmail.com" method="POST" name="formulario-de-contacto">
+					<label>Nombre y apellido:</label>
+					<br>
+					<input type="text" name="nombre" required>
+					<br>
+					<br>
+					<label>Email:</label>
+					<br>
+					<input type="email" name="email" required>
+					<br>
+					<br>
+					<label>Escriba su mensaje:</label>
+					<br>
+					<textarea name="msj" id="mensaje" required></textarea>
+					<br>
+					<br>
+					<input type="submit" name="submit">
+				</form>
 		</section>
 	</div>
 </body>

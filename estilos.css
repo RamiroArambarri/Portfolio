@@ -74,7 +74,7 @@ a img {
 	margin: 0 auto;
 }
 
-#sirena, #howl, #dama-y-dragon, #guardian, #richard, #princesa, #warrior-souls, #anubis {
+#sirena, #howl, #dama-y-dragon, #guardian, #ray-rossi, #princesa, #warrior-souls, #anubis {
 	max-width: 100%;
 	max-height: 100vh;
 }
@@ -184,4 +184,27 @@ and (orientation: portrait)
 	iframe{
 		height: 1100px;
 	}
+}
+
+/*Para el formulario*/
+
+form {
+	border: solid white;
+	padding: 1em;
+}
+
+input, textarea{
+	border: solid lightslategray 0;
+	background: lightslategray;
+	color: white;
+	padding: 0.3em;
+	width: 30ex;
+	max-width: 100%;
+}
+
+#mensaje {
+	width: 60ex;
+	height: 20em;
+	resize: none;
+	max-width: 100%;
 }
