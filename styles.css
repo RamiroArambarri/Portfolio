@@ -441,11 +441,11 @@ h2 {
     line-height: 2em;
   }
   
-  form > div {
+  #sender-data {
     display: flex;
   }
 
-  form > div *{
+  #sender-data *{
     margin: 0 1em 0 0;
     width: 80%;
   }
@@ -473,11 +473,11 @@ h2 {
   }
 
   @media only screen and (max-width: 768px) {
-    form > div {
+    #sender-data {
       flex-wrap: wrap;
     }
 
-    form > div *{
+    #sender-data *{
       width: 100%;
     }
     
