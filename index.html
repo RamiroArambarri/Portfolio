@@ -1,63 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ramiro Arambarri</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/other/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Ramiro Arambarri - Portfolio</title>
 </head>
+
 <body>
-	<div id="contenedor">
-		<nav>
-			<ul>
-				<li><a href="index.html">Principal</a></li>
-				<li><a href="contactame.html">Contáctame</a></li>	
-			</ul>
-		</nav>
-		<section id="sobre-mi">
-			<div>
-				<h1>
-				Ramiro Arambarri
-				</h1>
-				<p>¡Bienvenidos a mi portafolio! Soy un artista gráfico especializado en ilustración digital. Mis ilustraciones se caracterizan por un estilo caricaturesco de línea clara y colores vivos y estoy especialmente interesado en temáticas de fantasía y ficción. He realizado también trabajos en otros estilos como el pixel art.</p>
-			</div>
-			<img src="imagenes/perfil.jpg" alt="Foto de Ramiro 	Arambarri">
-		</section>
-		<section id="galeria">
-			<a href="#sirena"><img src="imagenes/thumnails/sirena.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#cthulhu"><img src="imagenes/thumnails/cthulhu.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#genio"><img src="imagenes/thumnails/genio.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#dama-y-dragon"><img src="imagenes/thumnails/dama-y-dragon.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#paladin"><img src="imagenes/thumnails/paladin-thum.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#howl"><img src="imagenes/thumnails/howl.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#ray-rossi"><img src="imagenes/thumnails/ray-rossi.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#princesa"><img src="imagenes/thumnails/princesa.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#lobo"><img src="imagenes/thumnails/lobo.png" alt="Foto de Ramiro 	Arambarri"></a>
-			<a href="#anubis"><img src="imagenes/thumnails/anubis.png" alt="Foto de Ramiro 	Arambarri"></a>
-		</section>
-		<section id="galeria-detallada">
-			<br>
-			<img src="imagenes/thumnails/sirena.png" alt="Foto de Ramiro 	Arambarri" id="sirena">
-			<br>
-			<img src="imagenes/cthulhu-proceso.png" alt="Foto de Ramiro 	Arambarri" id="cthulhu">
-			<br>
-			<img src="imagenes/thumnails/genio.png" alt="Foto de Ramiro 	Arambarri" id="genio">
-			<br>
-			<img src="imagenes/thumnails/dama-y-dragon.png" alt="Foto de Ramiro 	Arambarri" id="dama-y-dragon">
-			<br>
-			<img src="imagenes/paladin.png" alt="Foto de Ramiro 	Arambarri" id="paladin">
-			<br>
-			<img src="imagenes/thumnails/howl.png" alt="Foto de Ramiro 	Arambarri"  id="howl">
-			<br>
-			<img src="imagenes/thumnails/ray-rossi.png" alt="Foto de Ramiro 	Arambarri" id="ray-rossi">
-			<br>
-			<img src="imagenes/thumnails/princesa.png" alt="Foto de Ramiro 	Arambarri" id="princesa">
-			<br>
-			<img src="imagenes/thumnails/lobo.png" alt="Foto de Ramiro 	Arambarri" id="lobo">
-			<br>
-			<img src="imagenes/thumnails/anubis.png" alt="Foto de Ramiro 	Arambarri" id="anubis">
-			<br>
-		</section>
-	</div>
+
+
+  <div class="background"></div>
+  
+  <div class="cards-container">
+    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s1" checked>
+    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s2">
+    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s3">
+    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s4">
+    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s5">
+
+    <div class="cards">
+      <label for="s1" id="slide1">
+        <div class="card tren-card">
+          <div class="image"></div>
+        </div>
+      </label>
+
+      <label for="s2" id="slide2">
+        <div class="card sirena-card">
+          <div class="image"></div>
+        </div>
+      </label>
+
+      <label for="s3" id="slide3">
+        <div class="card lobo-card">
+          <div class="image"></div>
+        </div>
+      </label>
+
+      <label for="s4" id="slide4">
+        <div class="card neko-card">
+          <div class="image"></div>
+        </div>
+      </label>
+
+      <label for="s5" id="slide5">
+        <div class="card quetzal-card">
+          <div class="image"></div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#gallery-nav"><strong>Galería</strong></a></li>
+      <li><a href="#about"><strong>Sobre mí</strong></a></li>
+      <li><a href="#form"><strong>Contáctame</strong></a></li>
+    </ul>
+  </nav>
+
+  <nav id="gallery-nav">
+    <ul>
+      <li class="gallery-nav-active gallery-nav-button" onclick="galleryChange(this, 'digital-gallery')">Digital</li>
+      <li class="gallery-nav-button" onclick="galleryChange(this, 'pixel-art-gallery')">Pixel art</li>
+      <li class="gallery-nav-button" onclick="galleryChange(this, 'sketchbook-gallery')">Sketchbook</li>
+    </ul>
+  </nav>
+
+  <div id="digital-gallery" class="gallery">
+    <div class="gallery-item neko-card">
+      <div class="image" onclick="openPoster('images/digital/neko.png')"></div>
+    </div>
+    <div class="gallery-item lobo-card">
+      <div class="image" onclick="openPoster('images/digital/lobo.png')"></div>
+    </div>
+    <div class="gallery-item sirena-card">
+      <div class="image" onclick="openPoster('images/digital/sirena.png')"></div>
+    </div>
+    <div class="gallery-item quetzal-card">
+      <div class="image" onclick="openPoster('images/digital/quetzal.jpg')"></div>
+    </div>
+    <div class="gallery-item guardian-card">
+      <div class="image" onclick="openPoster('images/digital/guardian.png')"></div>
+    </div>
+    <div class="gallery-item anubis-card">
+      <div class="image" onclick="openPoster('images/digital/anubis.png')"></div>
+    </div>
+    <div class="gallery-item chicasubte-card">
+      <div class="image" onclick="openPoster('images/digital/chicasubte.jpg')"></div>
+    </div>
+    <div class="gallery-item tren-card">
+      <div class="image" onclick="openPoster('images/digital/tren.png')"></div>
+    </div>
+    <div class="gallery-item howl-card">
+      <div class="image" onclick="openPoster('images/digital/howl.png')"></div>
+    </div>
+    <div class="gallery-item rayrossi-card">
+      <div class="image" onclick="openPoster('images/digital/rayrossi.png')"></div>
+    </div>
+    <div class="gallery-item cthulhu-card">
+      <div class="image" onclick="openPoster('images/digital/cthulhu.png')"></div>
+    </div>
+    <div class="gallery-item paladin-card">
+      <div class="image" onclick="openPoster('images/digital/paladin.png')"></div>
+    </div>
+  </div>
+
+  <div id="pixel-art-gallery" class="gallery">
+    <div class="gallery-item dragon-card">
+      <div class="image" onclick="openPoster('images/pixel-art/dragon.jpg')"></div>
+    </div>
+    <div class="gallery-item himeji-card">
+      <div class="image" onclick="openPoster('images/pixel-art/himeji.png')"></div>
+    </div>
+    <div class="gallery-item salon-card">
+      <div class="image" onclick="openPoster('images/pixel-art/salon.png')"></div>
+    </div>
+    <div class="gallery-item tetera-card">
+      <div class="image" onclick="openPoster('images/pixel-art/tetera.png')"></div>
+    </div>
+    <div class="gallery-item noctambularia-card">
+      <div class="image" onclick="openPoster('images/pixel-art/noctambularia.jpg')"></div>
+    </div>
+  </div>
+
+  <div id="sketchbook-gallery" class="gallery">
+    <div class="gallery-item dragon-sketch-card">
+      <div class="image" onclick="openPoster('images/sketch/dragon-sketch.jpg')"></div>
+    </div>
+    <div class="gallery-item buho-sketch-card">
+      <div class="image" onclick="openPoster('images/sketch/buho-sketch.png')"></div>
+    </div>
+    <div class="gallery-item angel-sketch-card">
+      <div class="image" onclick="openPoster('images/sketch/angel-sketch.jpg')"></div>
+    </div>
+    <div class="gallery-item guardian-sketch-card">
+      <div class="image" onclick="openPoster('images/sketch/guardian-sketch.png')"></div>
+    </div>
+    <div class="gallery-item landscape-1-card">
+      <div class="image" onclick="openPoster('images/sketch/landscape-1.jpg')"></div>
+    </div>
+    <div class="gallery-item parque-sketch-card">
+      <div class="image" onclick="openPoster('images/sketch/parque-sketch.png')"></div>
+    </div>
+    <div class="gallery-item ray-rossi-card">
+      <div class="image" onclick="openPoster('images/sketch/ray-rossi-sketch.png')"></div>
+    </div>
+    <div class="gallery-item landscape-2-card">
+      <div class="image" onclick="openPoster('images/sketch/landscape-2.jpg')"></div>
+    </div>
+  </div>
+
+  <div id="poster-container">
+      <img id="poster" src="images/digital/sirena.png" alt="">
+      <img id="close" src="images/other/x.png" onclick="closePoster()"></img>
+  </div>
+
+  <article id="about">
+    <div id="about-text">
+    <h2>Ramiro Arambarri</h2>
+    <p>
+      ¡Hola! Soy Ramiro Arambarri, nací el 29 de abril del 2003 en Buenos Aires, Argentina, y desde que tengo memoria me apasiona dibujar. Me gustan los colores vibrantes y agradables. Mis temáticas favoritas son las de fantasía y ficción, y siempre pongo el foco en la emoción que quiero transmitir. Me especializo en ilustraciones digitales en alta resolución, pero he realizado también trabajos en pixel art, y de dibujo tradicional.
+    </p>
+    <a href="https://www.instagram.com/ramiro_arambarri/" target="_blank"><img src="images/other/instagram-icon.png" class="social" alt=""></a>
+    <a href="https://www.youtube.com/channel/UCwwtu-nl-G_SKWY06ree4rQ" target="_blank"><img src="images/other/youtube-icon.png" class="social" alt=""></a>
+    </div>
+    <div class="image" id="photo">
+    </div>
+    
+  </article>
+
+
+  <form name="form" id="form" action="https://formsubmit.co/raarambarri@gmail.com" method="POST">
+    <h2>Contáctame</h2>
+    <p>Puedes contactarme enviando un mail a raarambarri@gmail.com o completando el siguiente formulario:</p>
+    <div id="sender-data">
+      <div>
+        <label for="name" class="form-label">Nombre</label><br>
+        <input type="text" id="name" class="form-control" name="name" required>
+
+        <div id="name-rejected" class="rejected">
+          Escriba su nombre
+        </div>
+      </div>
+      <div>
+        <label for="surname" class="form-label">Apellido</label><br>
+        <input type="text" class="form-control" id="surname" name="surname" required>
+
+        <div id="surname-rejected" class="rejected">
+          Escriba su apellido
+        </div>
+      </div>
+      <div>
+        <label for="eemail" class="form-label">Email</label><br>
+        <input type="text" class="form-control" id="eemail" name="eemail" required>
+        <div id="mail-rejected" class="rejected">
+          Escriba un mail correcto
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="message-div">
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea id="message" name="message" class="form-control" required></textarea>
+        <div id="message-rejected" class="rejected">
+          Escriba su mensaje
+        </div>
+      </div>
+    </div>
+      <div>
+        <input type="button" onclick="send()" value="enviar" id="send-btn">
+        <button class="hidden" type="submit">Send</button>
+        <input type="hidden" name="_next" value="https://ramiroarambarri.github.io/portfolio/contactus/index.html">
+        <input type="hidden" name="_captcha" value="false">
+      </div>
+    
+  </form>
+
+  <script src="gallery.js"></script>
+  <script src="send.js"></script>
+
+
 </body>
+
 </html>

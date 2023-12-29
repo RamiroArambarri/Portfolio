@@ -1,0 +1,509 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  font-family: Tahoma;
+  margin: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/other/fondo-portfolio5.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.menu {
+  position: absolute;
+  font-size: 1.5em;
+  top: 30vh;
+  margin: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  transition: 0.1s;
+  position: relative;
+  left: 0;
+  border-left: solid Maroon 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu li:hover {
+  position: relative;
+  left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    position: static;
+    font-size: 1em;
+  }
+
+  .menu li{
+    display: inline-block;
+  }
+}
+
+.hidden-input {
+    display: none;
+  }
+
+h2 {
+  color: maroon;
+  border-left: solid maroon 5px;
+  padding: 10px;
+}
+  
+  .cards-container {
+    margin: 0 auto; 
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .cards {
+    position: relative;
+    height: 90vh;
+    width: 90vh;
+    max-width: 100%;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  .cards label {
+  
+    position: absolute;
+    width: 85%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+    height: 100%;
+  }
+  
+  .cards .card{
+    position: relative;
+    height: 100%;
+    background-color: #323444;
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+  }
+  
+  
+  
+  #s1:checked~.cards #slide4,
+  #s2:checked~.cards #slide5,
+  #s3:checked~.cards #slide1,
+  #s4:checked~.cards #slide2,
+  #s5:checked~.cards #slide3 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+    filter: brightness(0.2);
+  }
+  
+  #s1:checked~.cards #slide5,
+  #s2:checked~.cards #slide1,
+  #s3:checked~.cards #slide2,
+  #s4:checked~.cards #slide3,
+  #s5:checked~.cards #slide4 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+    filter: brightness(0.7);
+  }
+  
+  #s1:checked~.cards #slide1,
+  #s2:checked~.cards #slide2,
+  #s3:checked~.cards #slide3,
+  #s4:checked~.cards #slide4,
+  #s5:checked~.cards #slide5 {
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(0, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #ECEAED;
+    filter: brightness(1);
+  }
+  
+  #s1:checked~.cards #slide2,
+  #s2:checked~.cards #slide3,
+  #s3:checked~.cards #slide4,
+  #s4:checked~.cards #slide5,
+  #s5:checked~.cards #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+    filter: brightness(0.7);
+  }
+  
+  #s1:checked~.cards #slide3,
+  #s2:checked~.cards #slide4,
+  #s3:checked~.cards #slide5,
+  #s4:checked~.cards #slide1,
+  #s5:checked~.cards #slide2 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+    filter: blur(10px);
+    filter: brightness(0.2);
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .cards {
+      display:none;
+    }
+  }
+
+  #gallery-nav ul {
+    margin: 20vh 1em 2em;
+    display: flex;
+  }
+
+  .gallery-nav-button {
+    font-size: 1.5em;
+    display: block;
+    padding: .3em 1em;
+    border-bottom: solid Maroon 5px;
+  }
+
+  .gallery-nav-button:hover {
+    border: solid Maroon 3px;
+    border-radius: 10px 10px 0 0;
+    padding: calc(.3em - 3px) calc(1em - 3px);
+  }
+
+  .gallery-nav-active {
+    border: solid Maroon 3px!important;
+    border-radius: 10px 10px 0 0;
+
+  }
+
+  .gallery-nav-active:hover{
+    padding: .3em 1em;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .gallery-nav-button {
+      font-size: 1em;
+    }
+
+    #gallery-nav ul {
+      margin: 1em 1em 2em;
+    }
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .neko-card .image{
+    background-image: url(images/digital/neko.png);
+  }
+  .quetzal-card .image{
+    background-image: url(images/digital/quetzal.jpg);
+  }
+  .sirena-card .image{
+    background-image: url(images/digital/sirena.png);
+  }
+  .guardian-card .image{
+    background-image: url(images/digital/guardian.png);
+  }
+  .lobo-card .image{
+    background-image: url(images/digital/lobo.png);
+  }
+  .anubis-card .image{
+    background-image: url(images/digital/anubis.png);
+  }
+  .chicasubte-card .image{
+    background-image: url(images/digital/chicasubte.jpg);
+  }
+  .cthulhu-card .image{
+    background-image: url(images/digital/cthulhu.png);
+  }
+  .howl-card .image{
+    background-image: url(images/digital/howl.png);
+  }
+  .rayrossi-card .image{
+    background-image: url(images/digital/rayrossi.png);
+  }
+  
+  .tren-card .image{
+    background-image: url(images/digital/tren.png);
+    background-position-x: -180px;
+  }
+  .paladin-card .image{
+    background-image: url(images/digital/paladin.png);
+  }
+  
+  .salon-card .image{
+    background-image: url(images/pixel-art/salon.png);
+  }
+
+  .dragon-card .image{
+    background-image: url(images/pixel-art/dragon.jpg);
+  }
+
+  .tetera-card .image{
+    background-image: url(images/pixel-art/tetera.png);
+  }
+
+  .himeji-card .image{
+    background-image: url(images/pixel-art/himeji.png);
+  }
+
+  .noctambularia-card .image{
+    background-image: url(images/pixel-art/noctambularia.jpg);
+  }
+
+  .dragon-sketch-card .image{
+    background-image: url(images/sketch/dragon-sketch.jpg);
+  }
+
+  .angel-sketch-card .image{
+    background-image: url(images/sketch/angel-sketch.jpg);
+  }
+
+  .buho-sketch-card .image{
+    background-image: url(images/sketch/buho-sketch.png);
+  }
+
+  .parque-sketch-card .image{
+    background-image: url(images/sketch/parque-sketch.png);
+  }
+
+  .landscape-1-card .image{
+    background-image: url(images/sketch/landscape-1.jpg);
+  }
+
+  .landscape-2-card .image{
+    background-image: url(images/sketch/landscape-2.jpg);
+  }
+
+  .ray-rossi-card .image{
+    background-image: url(images/sketch/ray-rossi-sketch.png);
+  }
+
+  .guardian-sketch-card .image{
+    background-image: url(images/sketch/guardian-sketch.png);
+  }
+
+  #pixel-art-gallery {
+    display: none;
+  }
+
+  #sketchbook-gallery {
+    display: none;
+  }
+  .gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .gallery-item {
+    width: calc(25% - 20px);
+    aspect-ratio: 1;
+    transition: 0.2s;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+  .gallery-item .image, .image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    transition: 0.2s;
+  }
+  
+  .gallery-item:hover .image{
+    scale: 120%;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .gallery-item {
+      width: calc(33% - 20px);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .gallery-item {
+      width: calc(50% - 20px);
+    }
+  }
+
+  #poster-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 70%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    display: none;
+  }
+  
+  #close {
+    width: 20px;
+    height: 20px;
+    margin-top: 36px;
+    cursor: pointer;
+  }
+  
+  #poster {
+    height: 90vh;
+    width: auto;
+    max-width: 90vw;
+    margin: 30px;
+  }
+  
+#about {
+  display: flex;
+  width: 85%;  
+  margin: 7em auto 5em;
+  font-size: 1.1em;
+  }
+  
+
+  a, a:visited, a:active {
+    color:Maroon;
+    text-decoration: none;
+  }
+
+  #about-text {
+    width:75%;
+  }
+
+  #photo {
+    background-image: url(images/other/foto.jpg);
+    width:25%;
+    aspect-ratio: 1/1;
+    background-position-y: 15%;
+    margin: 1em;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #about-text {
+      width:100%;
+    }
+
+    #photo {
+      width: 50%;
+      margin: 1em auto;
+    }
+
+    #about {
+      flex-wrap: wrap;
+    }
+  }
+
+  .social {
+    margin: 10px 10px 0 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  form {
+    width: 85%;  
+    margin: 5em auto;
+    padding: 1px;
+    font-size: 1.1em;
+    line-height: 2em;
+  }
+  
+  form > div {
+    display: flex;
+  }
+
+  form > div *{
+    margin: 0 1em 0 0;
+    width: 80%;
+  }
+
+  .rejected {
+    color: red;
+    visibility: hidden;
+  }
+
+  input, textarea {
+    border: none;
+    background-color: lightgray;
+    padding: .5em;
+  }
+
+  #message {
+    resize: none;
+    width: 100%;
+    height: 7em;
+    max-width: 100%;
+  }
+
+  .message-div {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    form > div {
+      flex-wrap: wrap;
+    }
+
+    form > div *{
+      width: 100%;
+    }
+    
+    .message-div {
+      width: 100%;
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+  
+  #send-btn {
+    font-size: 0.8em;
+    width: 7em;
+    height: 2em;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: .1s;
+  }
+  
+  #send-btn:hover {
+    background-color: lightgreen;
+    
+  }
+
+  
+  
