@@ -433,9 +433,15 @@ h2 {
     height: 24px;
   }
 
+  #form-title {
+    width: 85%;  
+  margin: 7em auto 2em;
+  font-size: 1.1em;
+  }
+
   form {
     width: 85%;  
-    margin: 5em auto;
+    margin: 2em auto 5em;
     padding: 1px;
     font-size: 1.1em;
     line-height: 2em;
