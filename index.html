@@ -177,45 +177,26 @@
 
 
   <form name="form" id="form" action="https://formsubmit.co/raarambarri@gmail.com" method="POST">
+    
     <h2>Contáctame</h2>
     <p>Puedes contactarme enviando un mail a raarambarri@gmail.com o completando el siguiente formulario:</p>
-    <div id="sender-data">
-      <div>
+
         <label for="name" class="form-label">Nombre</label><br>
-        <input type="text" id="name" class="form-control" name="name" required>
+        <input type="text" id="name" class="form-control" name="name" required><br>
 
-        <div id="name-rejected" class="rejected">
-          Escriba su nombre
-        </div>
-      </div>
-      <div>
         <label for="surname" class="form-label">Apellido</label><br>
-        <input type="text" class="form-control" id="surname" name="surname" required>
+        <input type="text" class="form-control" id="surname" name="surname" required><br>
 
-        <div id="surname-rejected" class="rejected">
-          Escriba su apellido
-        </div>
-      </div>
-      <div>
         <label for="eemail" class="form-label">Email</label><br>
-        <input type="text" class="form-control" id="eemail" name="eemail" required>
-        <div id="mail-rejected" class="rejected">
-          Escriba un mail correcto
-        </div>
-      </div>
-    </div>
-      <div class="message-div">
-        <label for="message" class="form-label">Mensaje</label>
-        <textarea id="message" name="message" class="form-control" required></textarea>
-        <div id="message-rejected" class="rejected">
-          Escriba su mensaje
-        </div>
-      </div>
-      <div id="form-buttons">
-        <button type="submit" id="send-btn">Enviar</button>
+        <input type="text" class="form-control" id="eemail" name="eemail" required><br>
+
+        <label for="message" class="form-label">Mensaje</label><br>
+        <textarea id="message" name="message" class="form-control" required></textarea><br>
+
+
+    <button type="submit">Enviar</button>
         <input type="hidden" name="_next" value="https://ramiroarambarri.github.io/Portfolio/">
         <input type="hidden" name="_captcha" value="false">
-      </div>
     
   </form>
 
