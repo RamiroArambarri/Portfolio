@@ -500,7 +500,7 @@ h2 {
     transition: .1s;
   }
   
-  #green:hover {
+  #send-btn:hover {
     background-color: lightgreen;
     
   }
