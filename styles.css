@@ -225,7 +225,7 @@ h2 {
     background-image: url(images/digital/neko.png);
   }
   .quetzal-card .image{
-    background-image: url(images/digital/quetzal.jpg);
+    background-image: url(images/digital/quetzal.png);
   }
   .sirena-card .image{
     background-image: url(images/digital/sirena.png);
@@ -236,11 +236,11 @@ h2 {
   .lobo-card .image{
     background-image: url(images/digital/lobo.png);
   }
-  .anubis-card .image{
-    background-image: url(images/digital/anubis.png);
+  .trigo-card .image{
+    background-image: url(images/digital/trigo.png);
   }
-  .chicasubte-card .image{
-    background-image: url(images/digital/chicasubte.jpg);
+  .telefono-card .image{
+    background-image: url(images/digital/telefono.png);
   }
   .cthulhu-card .image{
     background-image: url(images/digital/cthulhu.png);
@@ -278,6 +278,10 @@ h2 {
 
   .noctambularia-card .image{
     background-image: url(images/pixel-art/noctambularia.jpg);
+  }
+
+  .bitsonia-card .image{
+    background-image: url(images/pixel-art/bitsonia.png);
   }
 
   .dragon-sketch-card .image{
