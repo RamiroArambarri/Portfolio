@@ -194,6 +194,7 @@ h2 {
     border: solid Maroon 3px;
     border-radius: 10px 10px 0 0;
     padding: calc(.3em - 3px) calc(1em - 3px);
+    cursor: pointer;
   }
 
   .gallery-nav-active {
@@ -236,6 +237,11 @@ h2 {
   .lobo-card .image{
     background-image: url(images/digital/lobo.png);
   }
+
+  .zorro-card .image{
+    background-image: url(images/digital/zorro.png);
+  }
+
   .trigo-card .image{
     background-image: url(images/digital/trigo.png);
   }
@@ -247,9 +253,6 @@ h2 {
   }
   .howl-card .image{
     background-image: url(images/digital/howl.png);
-  }
-  .rayrossi-card .image{
-    background-image: url(images/digital/rayrossi.png);
   }
   
   .tren-card .image{
