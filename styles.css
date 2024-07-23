@@ -200,7 +200,6 @@ h2 {
   .gallery-nav-active {
     border: solid Maroon 3px!important;
     border-radius: 10px 10px 0 0;
-
   }
 
   .gallery-nav-active:hover{
@@ -313,6 +312,10 @@ h2 {
 
   .ray-rossi-card .image{
     background-image: url(images/sketch/ray-rossi-sketch.png);
+  }
+
+  .mouth-sketch-card .image{
+    background-image: url(images/sketch/mouth-sketch.jpg);
   }
 
   .guardian-sketch-card .image{
