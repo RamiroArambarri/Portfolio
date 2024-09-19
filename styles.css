@@ -373,8 +373,10 @@ h2 {
     width: auto;
     max-width: 90vw;
     margin: 30px;
+    object-fit: contain;
   }
-  
+
+
 .content-section{
   width:60%;
   color:rgb(80, 80, 80);
@@ -423,6 +425,11 @@ h2 {
       max-width: 100%;
     }
 
+    #close{
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
 
     
     #photo {
