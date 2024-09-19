@@ -10,6 +10,7 @@ a, a:visited, a:active {
 body {
   font-family: Tahoma;
   margin: 3em auto 0;
+  position: absolute;
 }
 
 header {
@@ -30,12 +31,18 @@ header h1 {
   color: rgb(158, 51, 3);
 }
 
+
+
 .logo {
   width: 200px;
   height: auto;
   margin:0 auto;
   padding:0;
   display:block;
+}
+
+#menu-main-button{
+  display: none;
 }
 
 
@@ -45,6 +52,7 @@ header h1 {
   top: 30vh;
   margin: 0 auto 2em;
   padding:0;
+  height: 100%;
 }
 
 .menu ul {
@@ -74,6 +82,44 @@ h2 {
   padding: 10px;
 }
   
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 1em auto 0;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  .logo{
+    width:100px;
+  }
+
+  #menu-main-button {
+    border:none;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: .5em;
+    font-family: bahnschrift;
+    font-size: 1em;
+    color: rgb(80, 80, 80);
+  }
+
+  .menu {
+    font-size: 1em;
+    transition: 0.2s;
+    height: 0px;
+    overflow: hidden;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+}
 
 #gallery-section { 
   display: flex; 
@@ -273,9 +319,9 @@ h2 {
 
     .gallery {
       width: 100%;
-      padding: 10px;
+      padding: 0;
       margin: 0 auto;
-      width: 100%;
+      justify-content: space-evenly;
     }
 
     #gallery-nav {
@@ -286,7 +332,7 @@ h2 {
     #gallery-nav ul {
       display:flex;
       padding:0;
-      font-size: 0.7em;
+      font-size: 0.5em;
       margin: 0 auto;
       justify-content: space-around;
     }    
@@ -332,13 +378,14 @@ h2 {
 .content-section{
   width:60%;
   color:rgb(80, 80, 80);
+  margin: 7em auto 5em;
+  font-size: 1.1em;
 }
 
 
   #about {
   display: flex;
-  margin: 7em auto 5em;
-  font-size: 1.1em;
+
   }
   
   #about-text {
@@ -363,7 +410,6 @@ h2 {
 
   #contact-me {
   margin: 7em auto 5em;
-  font-size: 1.1em;
   }
 
   footer {
@@ -372,10 +418,13 @@ h2 {
 
   @media only screen and (max-width: 768px) {
     .content-section {
+      margin:5em auto;
       width:100%;
-      padding: 0 1em;
+      max-width: 100%;
     }
 
+
+    
     #photo {
       width: 50%;
       margin: 1em auto;
@@ -386,7 +435,16 @@ h2 {
     }
 
     #about-text{
-      width: 100%
+      width: 100%;
+      padding: 1em;
+    }
+
+    #contact-me {
+      margin: 7em auto 5em;
+    }
+
+    #contact-text{
+      padding: 1em;
     }
   }
   
