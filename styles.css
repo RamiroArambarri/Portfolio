@@ -1,218 +1,139 @@
+@font-face {
+  font-family: 'aaa';
+  src: url('CinzelDecorative-Regular.ttf');
+
+}
+
 html {
 	scroll-behavior: smooth;
 }
+a, a:visited, a:active {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+}
+
 
 body {
   font-family: Tahoma;
-  margin: 1em 0 0 0;
+  margin: 3em auto 0;
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(images/other/fondo-portfolio5.jpg);
-  background-size: cover;
-  opacity: 0.5;
-  z-index: -1;
+header {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
 }
+
+
+
+header h1 {
+  font-size: 5em;
+  margin:0;
+  color: rgb(158, 51, 3);
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  display:block;
+}
+
 
 .menu {
-  position: absolute;
+  font-family: bahnschrift;
   font-size: 1.5em;
   top: 30vh;
-  margin: 0;
+  margin: 0 auto 2em;
+  padding:0;
 }
 
 .menu ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .menu li {
-  transition: 0.1s;
-  position: relative;
-  left: 0;
-  border-left: solid Maroon 5px;
   margin: 10px;
   padding: 10px;
 }
 
-.menu li:hover {
-  position: relative;
-  left: 5px;
+.menu li a {
+  color: rgb(112, 112, 112);
 }
+.menu li a:hover {
+  color: rgb(158, 51, 3);
+}
+
 
 @media only screen and (max-width: 768px) {
   .menu {
     position: static;
     font-size: 1em;
   }
-
-  .menu li{
-    display: inline-block;
-  }
 }
 
-.hidden-input {
-    display: none;
-  }
-
 h2 {
-  color: maroon;
-  border-left: solid maroon 5px;
+  font-family: bahnschrift;
+  color: rgb(158, 51, 3);
+  border-left: solid  rgb(200, 200, 200) 4px;
   padding: 10px;
 }
   
-  .cards-container {
-    margin: 0 auto; 
-    display: flex;
-    transform-style: preserve-3d;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .cards {
-    position: relative;
-    height: 90vh;
-    width: 90vh;
-    max-width: 100%;
-    margin-bottom: 20px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-  
-  .cards label {
-  
-    position: absolute;
-    width: 85%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.55s ease;
-    height: 100%;
-  }
-  
-  .cards .card{
-    position: relative;
-    height: 100%;
-    background-color: #323444;
-    border-radius: 5px;
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
-  }
-  
-  
-  
-  #s1:checked~.cards #slide4,
-  #s2:checked~.cards #slide5,
-  #s3:checked~.cards #slide1,
-  #s4:checked~.cards #slide2,
-  #s5:checked~.cards #slide3 {
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-    transform: translate3d(-70%, 0, -220px);
-    --current-color1: #ECEAED;
-    --current-color2: #404457;
-    filter: brightness(0.2);
-  }
-  
-  #s1:checked~.cards #slide5,
-  #s2:checked~.cards #slide1,
-  #s3:checked~.cards #slide2,
-  #s4:checked~.cards #slide3,
-  #s5:checked~.cards #slide4 {
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-    transform: translate3d(-35%, 0, -120px);
-    --current-color1: #ECEAED;
-    --current-color2: #404457;
-    filter: brightness(0.7);
-  }
-  
-  #s1:checked~.cards #slide1,
-  #s2:checked~.cards #slide2,
-  #s3:checked~.cards #slide3,
-  #s4:checked~.cards #slide4,
-  #s5:checked~.cards #slide5 {
-    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
-    transform: translate3d(0, 0, 0);
-    --current-color1: #fad00c;
-    --current-color2: #ECEAED;
-    filter: brightness(1);
-  }
-  
-  #s1:checked~.cards #slide2,
-  #s2:checked~.cards #slide3,
-  #s3:checked~.cards #slide4,
-  #s4:checked~.cards #slide5,
-  #s5:checked~.cards #slide1 {
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-    transform: translate3d(35%, 0, -120px);
-    --current-color1: #ECEAED;
-    --current-color2: #404457;
-    filter: brightness(0.7);
-  }
-  
-  #s1:checked~.cards #slide3,
-  #s2:checked~.cards #slide4,
-  #s3:checked~.cards #slide5,
-  #s4:checked~.cards #slide1,
-  #s5:checked~.cards #slide2 {
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-    transform: translate3d(70%, 0, -220px);
-    --current-color1: #ECEAED;
-    --current-color2: #404457;
-    filter: blur(10px);
-    filter: brightness(0.2);
-  }
-  
 
-  @media only screen and (max-width: 768px) {
-    .cards {
-      display:none;
-    }
-  }
+#gallery-section { 
+  display: flex; 
+}
 
+  #gallery-nav {
+    position: sticky;
+    top: 5em;
+    background-color: white;
+    z-index: 20;
+    font-family: bahnschrift;
+    margin:0;
+    width: 20%;
+    height:100%
+  }
+  
   #gallery-nav ul {
-    margin: 20vh 1em 2em;
-    display: flex;
+    text-align: right;
+    padding:0;
   }
 
-  .gallery-nav-button {
-    font-size: 1.5em;
+  li {
+    list-style: none;
+    display:block;
+  }
+
+  a.gallery-nav-button {
+    font-size: 2em;
     display: block;
     padding: .3em 1em;
-    border-bottom: solid Maroon 5px;
+    color: rgb(112, 112, 112);
   }
 
-  .gallery-nav-button:hover {
-    border: solid Maroon 3px;
-    border-radius: 10px 10px 0 0;
-    padding: calc(.3em - 3px) calc(1em - 3px);
+  a.gallery-nav-button:hover {
+    color: rgb(158, 51, 3);
     cursor: pointer;
   }
 
-  .gallery-nav-active {
-    border: solid Maroon 3px!important;
-    border-radius: 10px 10px 0 0;
+  a.gallery-nav-active {
+    color: rgb(158, 51, 3);
   }
 
-  .gallery-nav-active:hover{
-    padding: .3em 1em;
-  }
 
   @media only screen and (max-width: 768px) {
     .gallery-nav-button {
       font-size: 1em;
-    }
-
-    #gallery-nav ul {
-      margin: 1em 1em 2em;
     }
   }
 
@@ -329,15 +250,19 @@ h2 {
   #sketchbook-gallery {
     display: none;
   }
+  
   .gallery {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 1em 0 1em;
+    width: 60%;
+    border-top: solid rgb(200, 200, 200) 4px;
+    border-bottom: solid rgb(200, 200, 200) 4px;
   }
   
   .gallery-item {
-    width: calc(25% - 20px);
+    width: calc(33% - 20px);
     aspect-ratio: 1;
     transition: 0.2s;
     overflow: hidden;
@@ -373,14 +298,14 @@ h2 {
   #poster-container {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 70%);
+    background-color: rgba(76, 76, 76, 90%);
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: top;
     display: none;
+    z-index:30;
   }
   
   #close {
@@ -397,19 +322,18 @@ h2 {
     margin: 30px;
   }
   
-#about {
+.content-section{
+  width:60%;
+  color:rgb(80, 80, 80);
+}
+
+
+  #about {
   display: flex;
-  width: 85%;  
   margin: 7em auto 5em;
   font-size: 1.1em;
   }
   
-
-  a, a:visited, a:active {
-    color:Maroon;
-    text-decoration: none;
-  }
-
   #about-text {
     width:75%;
   }
@@ -422,9 +346,27 @@ h2 {
     margin: 1em;
   }
 
+  
+
+  .social {
+    margin: 10px 10px 0 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  #contact-me {
+  margin: 7em auto 5em;
+  font-size: 1.1em;
+  }
+
+  footer {
+    margin: 2em
+  }
+
   @media only screen and (max-width: 768px) {
-    #about-text {
+    .content-section {
       width:100%;
+      padding: 0 1em;
     }
 
     #photo {
@@ -435,62 +377,10 @@ h2 {
     #about {
       flex-wrap: wrap;
     }
-  }
 
-  .social {
-    margin: 10px 10px 0 0;
-    width: 24px;
-    height: 24px;
-  }
-
-  #contact-me {
-    width: 85%;  
-  margin: 7em auto 5em;
-  font-size: 1.1em;
-  }
-
-  form {
-    width: 85%;  
-    margin: 2em auto 5em;
-    padding: 1px;
-    font-size: 1.1em;
-    line-height: 2em;
-  }
-
-  input, textarea {
-    border: none;
-    background-color: lightgray;
-    width: 100%;
-    padding: .5em;
-    width: 50%;
-  }
-
-  #message {
-    resize: none;
-    height: 7em;
-  }
-
-  @media only screen and (max-width: 768px) {
-    input, textarea {
-      width: 100%;
+    #about-text{
+      width: 100%
     }
   }
-
-  #send-btn {
-    font-size: 0.8em;
-    width: 7em;
-    height: 2em;
-    background-color: green;
-    color: white;
-    cursor: pointer;
-    transition: .1s;
-    border: none;
-  }
-  
-  #send-btn:hover {
-    background-color: lightgreen;
-    
-  }
-
   
   

@@ -8,55 +8,23 @@
   <link rel="icon" type="image/x-icon" href="images/other/favicon.ico">
   <link rel="stylesheet" href="styles.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
   <title>Ramiro Arambarri - Portfolio</title>
 </head>
 
 <body>
+  <header>
+    <img src="images/other/logo.png" alt="logotipo zorro" class="logo">
+    <h1>Ramiro Arambarri</h1>
+  </header>
 
 
-  <div class="background"></div>
-  
-  <div class="cards-container">
-    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s1" checked>
-    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s2">
-    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s3">
-    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s4">
-    <input class="hidden-input" type="radio" name="slider" class="d-none" id="s5">
-
-    <div class="cards">
-      <label for="s1" id="slide1">
-        <div class="card zorro-card">
-          <div class="image"></div>
-        </div>
-      </label>
-
-      <label for="s2" id="slide2">
-        <div class="card tren-card">
-          <div class="image"></div>
-        </div>
-      </label>
-
-      <label for="s3" id="slide3">
-        <div class="card trigo-card">
-          <div class="image"></div>
-        </div>
-      </label>
-
-      <label for="s4" id="slide4">
-        <div class="card neko-card">
-          <div class="image"></div>
-        </div>
-      </label>
-
-      <label for="s5" id="slide5">
-        <div class="card quetzal-card">
-          <div class="image"></div>
-        </div>
-      </label>
-    </div>
-  </div>
-
-  <nav class="menu">
+  <nav class="menu" id="menu">
     <ul>
       <li><a href="#gallery-nav"><strong>Galería</strong></a></li>
       <li><a href="#about"><strong>Sobre mí</strong></a></li>
@@ -64,127 +32,142 @@
     </ul>
   </nav>
 
-  <nav id="gallery-nav">
-    <ul>
-      <li class="gallery-nav-active gallery-nav-button" onclick="galleryChange(this, 'digital-gallery')">Digital</li>
-      <li class="gallery-nav-button" onclick="galleryChange(this, 'pixel-art-gallery')">Pixel art</li>
-      <li class="gallery-nav-button" onclick="galleryChange(this, 'sketchbook-gallery')">Sketchbook</li>
-    </ul>
-  </nav>
+
+  <a id="gallery-anchor"></a>
+  <section id="gallery-section">
+    <nav id="gallery-nav">
+      <ul>
+        <li><a onclick="galleryChange(this, 'digital-gallery')" class="gallery-nav-active gallery-nav-button"
+            href="#gallery-anchor">Digital</a></li>
+        <li><a onclick="galleryChange(this, 'pixel-art-gallery')" class="gallery-nav-button"
+            href="#gallery-anchor">Pixel art</a></li>
+        <li><a onclick="galleryChange(this, 'sketchbook-gallery')" class="gallery-nav-button"
+            href="#gallery-anchor">Sketchbook</a></li>
+      </ul>
+    </nav>
 
 
-  
-  <div id="digital-gallery" class="gallery">
-    <div class="gallery-item zorro-card">
-      <div class="image" onclick="openPoster('images/digital/aaaa.png')"></div>
-    </div>
-    <div class="gallery-item trigo-card">
-      <div class="image" onclick="openPoster('images/digital/trigo.png')"></div>
-    </div>
-    <div class="gallery-item telefono-card">
-      <div class="image" onclick="openPoster('images/digital/telefono.png')"></div>
-    </div>
-    <div class="gallery-item tren-card">
-      <div class="image" onclick="openPoster('images/digital/tren.png')"></div>
-    </div>
-    <div class="gallery-item neko-card">
-      <div class="image" onclick="openPoster('images/digital/neko.png')"></div>
-    </div>
-    <div class="gallery-item lobo-card">
-      <div class="image" onclick="openPoster('images/digital/lobo.png')"></div>
-    </div>
-    <div class="gallery-item sirena-card">
-      <div class="image" onclick="openPoster('images/digital/sirena.png')"></div>
-    </div>
-    <div class="gallery-item quetzal-card">
-      <div class="image" onclick="openPoster('images/digital/quetzal.png')"></div>
-    </div>
-    <div class="gallery-item guardian-card">
-      <div class="image" onclick="openPoster('images/digital/guardian.png')"></div>
-    </div>
-    <div class="gallery-item howl-card">
-      <div class="image" onclick="openPoster('images/digital/howl.png')"></div>
-    </div>
-    <div class="gallery-item cthulhu-card">
-      <div class="image" onclick="openPoster('images/digital/cthulhu.png')"></div>
-    </div>
-    <div class="gallery-item paladin-card">
-      <div class="image" onclick="openPoster('images/digital/paladin.png')"></div>
-    </div>
-  </div>
 
-  <div id="pixel-art-gallery" class="gallery">
-    <div class="gallery-item bitsonia-card">
-      <div class="image" onclick="openPoster('images/pixel-art/bitsonia.png')"></div>
+    <div id="digital-gallery" class="gallery">
+      <div class="gallery-item zorro-card">
+        <div class="image" onclick="openPoster('images/digital/aaaa.png')"></div>
+      </div>
+      <div class="gallery-item trigo-card">
+        <div class="image" onclick="openPoster('images/digital/trigo.png')"></div>
+      </div>
+      <div class="gallery-item telefono-card">
+        <div class="image" onclick="openPoster('images/digital/telefono.png')"></div>
+      </div>
+      <div class="gallery-item tren-card">
+        <div class="image" onclick="openPoster('images/digital/tren.png')"></div>
+      </div>
+      <div class="gallery-item neko-card">
+        <div class="image" onclick="openPoster('images/digital/neko.png')"></div>
+      </div>
+      <div class="gallery-item lobo-card">
+        <div class="image" onclick="openPoster('images/digital/lobo.png')"></div>
+      </div>
+      <div class="gallery-item sirena-card">
+        <div class="image" onclick="openPoster('images/digital/sirena.png')"></div>
+      </div>
+      <div class="gallery-item quetzal-card">
+        <div class="image" onclick="openPoster('images/digital/quetzal.png')"></div>
+      </div>
+      <div class="gallery-item guardian-card">
+        <div class="image" onclick="openPoster('images/digital/guardian.png')"></div>
+      </div>
+      <div class="gallery-item howl-card">
+        <div class="image" onclick="openPoster('images/digital/howl.png')"></div>
+      </div>
+      <div class="gallery-item cthulhu-card">
+        <div class="image" onclick="openPoster('images/digital/cthulhu.png')"></div>
+      </div>
+      <div class="gallery-item paladin-card">
+        <div class="image" onclick="openPoster('images/digital/paladin.png')"></div>
+      </div>
     </div>
-    <div class="gallery-item dragon-card">
-      <div class="image" onclick="openPoster('images/pixel-art/dragon.jpg')"></div>
-    </div>
-    <div class="gallery-item himeji-card">
-      <div class="image" onclick="openPoster('images/pixel-art/himeji.png')"></div>
-    </div>
-    <div class="gallery-item salon-card">
-      <div class="image" onclick="openPoster('images/pixel-art/salon.png')"></div>
-    </div>
-    <div class="gallery-item tetera-card">
-      <div class="image" onclick="openPoster('images/pixel-art/tetera.png')"></div>
-    </div>
-    <div class="gallery-item noctambularia-card">
-      <div class="image" onclick="openPoster('images/pixel-art/noctambularia.jpg')"></div>
-    </div>
-  </div>
 
-  <div id="sketchbook-gallery" class="gallery">
-    <div class="gallery-item mouth-sketch-card">
-      <div class="image" onclick="openPoster('images/sketch/mouth-sketch.jpg')"></div>
+    <div id="pixel-art-gallery" class="gallery">
+      <div class="gallery-item bitsonia-card">
+        <div class="image" onclick="openPoster('images/pixel-art/bitsonia.png')"></div>
+      </div>
+      <div class="gallery-item dragon-card">
+        <div class="image" onclick="openPoster('images/pixel-art/dragon.jpg')"></div>
+      </div>
+      <div class="gallery-item himeji-card">
+        <div class="image" onclick="openPoster('images/pixel-art/himeji.png')"></div>
+      </div>
+      <div class="gallery-item salon-card">
+        <div class="image" onclick="openPoster('images/pixel-art/salon.png')"></div>
+      </div>
+      <div class="gallery-item tetera-card">
+        <div class="image" onclick="openPoster('images/pixel-art/tetera.png')"></div>
+      </div>
+      <div class="gallery-item noctambularia-card">
+        <div class="image" onclick="openPoster('images/pixel-art/noctambularia.jpg')"></div>
+      </div>
     </div>
-    <div class="gallery-item dragon-sketch-card">
-      <div class="image" onclick="openPoster('images/sketch/dragon-sketch.jpg')"></div>
-    </div>
-    <div class="gallery-item buho-sketch-card">
-      <div class="image" onclick="openPoster('images/sketch/buho-sketch.png')"></div>
-    </div>
-    <div class="gallery-item angel-sketch-card">
-      <div class="image" onclick="openPoster('images/sketch/angel-sketch.jpg')"></div>
-    </div>
-    <div class="gallery-item guardian-sketch-card">
-      <div class="image" onclick="openPoster('images/sketch/guardian-sketch.png')"></div>
-    </div>
-    <div class="gallery-item landscape-1-card">
-      <div class="image" onclick="openPoster('images/sketch/landscape-1.jpg')"></div>
-    </div>
-    <div class="gallery-item parque-sketch-card">
-      <div class="image" onclick="openPoster('images/sketch/parque-sketch.png')"></div>
-    </div>
-    <div class="gallery-item landscape-2-card">
-      <div class="image" onclick="openPoster('images/sketch/landscape-2.jpg')"></div>
-    </div>
-  </div>
 
-  <div id="poster-container">
+    <div id="sketchbook-gallery" class="gallery">
+      <div class="gallery-item mouth-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/mouth-sketch.jpg')"></div>
+      </div>
+      <div class="gallery-item dragon-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/dragon-sketch.jpg')"></div>
+      </div>
+      <div class="gallery-item buho-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/buho-sketch.png')"></div>
+      </div>
+      <div class="gallery-item angel-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/angel-sketch.jpg')"></div>
+      </div>
+      <div class="gallery-item guardian-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/guardian-sketch.png')"></div>
+      </div>
+      <div class="gallery-item landscape-1-card">
+        <div class="image" onclick="openPoster('images/sketch/landscape-1.jpg')"></div>
+      </div>
+      <div class="gallery-item parque-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/parque-sketch.png')"></div>
+      </div>
+      <div class="gallery-item landscape-2-card">
+        <div class="image" onclick="openPoster('images/sketch/landscape-2.jpg')"></div>
+      </div>
+    </div>
+
+
+    <div id="poster-container">
       <img id="poster" src="images/digital/sirena.png" alt="">
       <img id="close" src="images/other/x.png" onclick="closePoster()"></img>
-  </div>
+    </div>
 
-  <article id="about">
+  </section>
+
+  <section class="content-section" id="about">
     <div id="about-text">
-    <h2>Ramiro Arambarri</h2>
-    <p>
-      ¡Hola! Soy Ramiro Arambarri, nací el 29 de abril del 2003 en Buenos Aires, Argentina, y desde que tengo memoria me apasiona dibujar. Me gustan los colores vibrantes y agradables. Mis temáticas favoritas son las de fantasía y ficción, y siempre pongo el foco en la emoción que quiero transmitir. Me especializo en ilustraciones digitales en alta resolución, pero he realizado también trabajos en pixel art, y de dibujo tradicional.
-    </p>
-    <a href="https://www.instagram.com/ramiro_arambarri/" target="_blank"><img src="images/other/instagram-icon.png" class="social" alt=""></a>
-    <a href="https://www.youtube.com/channel/UCwwtu-nl-G_SKWY06ree4rQ" target="_blank"><img src="images/other/youtube-icon.png" class="social" alt=""></a>
+      <h2>Ramiro Arambarri</h2>
+      <p>
+        ¡Hola! Soy Ramiro Arambarri, nací el 29 de abril del 2003 en Buenos Aires, Argentina, y desde que tengo memoria
+        me apasiona dibujar. Me gustan los colores vibrantes y agradables. Mis temáticas favoritas son las de fantasía y
+        ficción, y siempre pongo el foco en la emoción que quiero transmitir. Me especializo en ilustraciones digitales
+        en alta resolución, pero he realizado también trabajos en pixel art, y de dibujo tradicional.
+      </p>
+      <a href="https://www.instagram.com/ramiro_arambarri/" target="_blank"><img src="images/other/instagram-icon.png"
+          class="social" alt=""></a>
+      <a href="https://www.youtube.com/channel/UCwwtu-nl-G_SKWY06ree4rQ" target="_blank"><img
+          src="images/other/youtube-icon.png" class="social" alt=""></a>
     </div>
     <div class="image" id="photo">
     </div>
-    
-  </article>
 
-  <div id="contact-me">
-  <h2>Contáctame</h2>
-  <p>Puedes contactarme enviando un mail a raarambarri@gmail.com</p>
-</div>
- 
+  </section>
+
+  <section class="content-section" id="contact-me">
+    <h2>Contáctame</h2>
+    <p>Puedes contactarme enviando un mail a raarambarri@gmail.com</p>
+  </section>
+
+
 
   <script src="gallery.js"></script>
 
