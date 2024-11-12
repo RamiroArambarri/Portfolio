@@ -6,6 +6,9 @@ a, a:visited, a:active {
   color: rgb(112, 112, 112);
 }
 
+a {
+  cursor: pointer;
+}
 
 body {
   font-family: Tahoma;
@@ -199,8 +202,8 @@ h2 {
   .cthulhu-card .image{
     background-image: url(images/digital/cthulhu.png);
   }
-  .howl-card .image{
-    background-image: url(images/digital/howl.png);
+  .ultima_cancion-card .image{
+    background-image: url(images/digital/ultima_cancion.png);
   }
   
   .tren-card .image{
@@ -270,6 +273,20 @@ h2 {
   .guardian-sketch-card .image{
     background-image: url(images/sketch/guardian-sketch.png);
   }
+
+  .pandora-card .image{
+    background-image: url(images/pixel-art/pandora.png);
+  }
+
+  .halloween-card .image{
+    background-image: url(images/pixel-art/halloween.png);
+  }
+
+  .lechuza-sketch-card .image{
+    background-image: url(images/sketch/lechuza-sketch.png);
+  }
+
+
 
   #pixel-art-gallery {
     display: none;

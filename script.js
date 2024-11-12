@@ -26,6 +26,23 @@ function galleryChange(buttonName, galleryName) {
     for(let i = 0; i < galleries.length; i ++) {
         galleries[i].style.display = 'none';
     }
-    document.getElementById(galleryName).style.display = 'flex';
+    selectedGallery = document.getElementById(galleryName)
+    selectedGallery.style.display = 'flex';
+    selectedGallery.scrollIntoView({ behavior: 'smooth' });
     
 }
+
+const scrollToSection = (id) => {
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+
+function displayMenu() {
+    const menu = document.querySelector('.menu')
+
+    if(menu.clientHeight == 0){
+        menu.style.height = `${menu.scrollHeight}px`
+    } else {
+        menu.style.height = 0;
+    }
+} 

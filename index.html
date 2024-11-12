@@ -27,9 +27,9 @@
   <button id="menu-main-button" onclick="displayMenu()"><strong>Menú</strong></button>
   <nav class="menu" id="menu">
     <ul>
-      <li><a href="#gallery-nav"><strong>Galería</strong></a></li>
-      <li><a href="#about"><strong>Sobre mí</strong></a></li>
-      <li><a href="#contact-me"><strong>Contáctame</strong></a></li>
+      <li><a onclick="scrollToSection('#gallery-nav')"><strong>Galería</strong></a></li>
+      <li><a onclick="scrollToSection('#about')"><strong>Sobre mí</strong></a></li>
+      <li><a onclick="scrollToSection('#contact-me')"><strong>Contáctame</strong></a></li>
     </ul>
   </nav>
 
@@ -39,17 +39,20 @@
     <nav id="gallery-nav">
       <ul>
         <li><a onclick="galleryChange(this, 'digital-gallery')" class="gallery-nav-active gallery-nav-button"
-            href="#gallery-anchor">Digital</a></li>
+            >Digital</a></li>
         <li><a onclick="galleryChange(this, 'pixel-art-gallery')" class="gallery-nav-button"
-            href="#gallery-anchor">Pixel art</a></li>
+            >Pixel art</a></li>
         <li><a onclick="galleryChange(this, 'sketchbook-gallery')" class="gallery-nav-button"
-            href="#gallery-anchor">Sketchbook</a></li>
+            >Sketchbook</a></li>
       </ul>
     </nav>
 
 
 
     <div id="digital-gallery" class="gallery">
+      <div class="gallery-item ultima_cancion-card">
+        <div class="image" onclick="openPoster('images/digital/ultima_cancion.png')"></div>
+      </div>
       <div class="gallery-item zorro-card">
         <div class="image" onclick="openPoster('images/digital/aaaa.png')"></div>
       </div>
@@ -77,9 +80,6 @@
       <div class="gallery-item guardian-card">
         <div class="image" onclick="openPoster('images/digital/guardian.png')"></div>
       </div>
-      <div class="gallery-item howl-card">
-        <div class="image" onclick="openPoster('images/digital/howl.png')"></div>
-      </div>
       <div class="gallery-item cthulhu-card">
         <div class="image" onclick="openPoster('images/digital/cthulhu.png')"></div>
       </div>
@@ -89,6 +89,12 @@
     </div>
 
     <div id="pixel-art-gallery" class="gallery">
+      <div class="gallery-item halloween-card">
+        <div class="image" onclick="openPoster('images/pixel-art/halloween.png')"></div>
+      </div>
+      <div class="gallery-item pandora-card">
+        <div class="image" onclick="openPoster('images/pixel-art/pandora.png')"></div>
+      </div>
       <div class="gallery-item bitsonia-card">
         <div class="image" onclick="openPoster('images/pixel-art/bitsonia.png')"></div>
       </div>
@@ -110,6 +116,9 @@
     </div>
 
     <div id="sketchbook-gallery" class="gallery">
+      <div class="gallery-item lechuza-sketch-card">
+        <div class="image" onclick="openPoster('images/sketch/lechuza-sketch.png')"></div>
+      </div>
       <div class="gallery-item mouth-sketch-card">
         <div class="image" onclick="openPoster('images/sketch/mouth-sketch.jpg')"></div>
       </div>
@@ -172,8 +181,7 @@
 
 
 
-  <script src="gallery.js"></script>
-  <script src="menu.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
